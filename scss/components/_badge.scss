@@ -1,0 +1,14 @@
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 2px;
+
+  @each $key, $value in $colors-map {
+    &--#{$key} {
+      color:      map-get($value, dark);
+      background: map-get($value, light);
+    }
+  }
+}

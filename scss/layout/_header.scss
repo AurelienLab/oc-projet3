@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background: $bg-primary;
+  padding: 15px;
+  justify-content: center;
+  @include box-shadow();
+
+  &__logo {
+    margin-top: 5px;
+    img {
+      height: 1.6rem;
+    }
+  }
+
+  /* Uniquement lorsque le header a la classe header--menu attachée */
+  &.header--menu {
+    .header__btn-back {
+      display: flex;
+    }
+  }
+
+  .header__btn-back {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 60px;
+  }
+}

@@ -1,0 +1,74 @@
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+  counter-reset: li;
+  margin-left: 12px;
+  &__element {
+    @include box-shadow();
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    background: $bg-secondary;
+    border-radius: 1.2rem;
+    z-index: 1;
+
+    @each $key, $value in $colors-map {
+      &--#{$key} {
+        &::before {
+          background: map-get($value, base);
+        }
+
+        &::after {
+          @include pseudo-bg;
+          transition: opacity 200ms ease-in-out;
+          background: map-get($value, lighter);
+        }
+
+        &:hover {
+          &::after {
+            opacity: 1;
+          }
+          .instructions__icon {
+            color: map-get($value, base)
+          }
+        }
+      }
+    }
+
+    &::before { //Aspect de la numérotation
+      display: block;
+      position: absolute;
+      top: 35%;
+      left: -12px;
+      border-radius: 50%;
+      content: counter(li);
+      counter-increment: li;
+      color: #FFFFFF;
+      font-size: 0.7rem;
+      line-height: 16px;
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      padding: 4px;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    font-size: 1.2rem;
+    transition: color 200ms ease-in-out;
+  }
+
+  &__text {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+}

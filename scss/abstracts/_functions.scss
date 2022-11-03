@@ -1,0 +1,29 @@
+@function gradient($color1: $color-primary, $color2: $color-secondary, $angle: 0deg ) {
+  @return linear-gradient($angle, $color1 0%, $color2 100%);
+}
+
+@function lighter-gradient($color1: $color-primary, $color2: $color-secondary, $angle: 0deg ) {
+  $delta: 5%;
+  @return linear-gradient($angle, lighten($color1, $delta) 0%, lighten($color2, $delta) 100%);
+}
+
+//Initialisation de la map
+$colors-map: ();
+
+//Fonction qui sera appelée pour chaque couleur
+@function create_color_map($color) {
+  $map: (
+    base: $color,
+    light: lighten($color, 5%),
+    lighter: lighten($color, 30%),
+    dark: darken($color, 35%),
+  );
+  @return $map;
+}
+
+//Itération sur chaque couleur définie dans _variables.scss
+@each $key, $value in $colors {
+  $map: (); //Création d'une map temporaire
+  $map: map-merge($map, ($key: create_color_map($value))); // Ajout des variations générées par la fonction "create_color_map"
+  $colors-map: map-merge($colors-map, $map); //Ajout de la map temporaire à la map globale
+}
