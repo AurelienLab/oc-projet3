@@ -29,6 +29,8 @@
   }
 
   &-restaurant {
+    @include animate-appear;
+
     .badge {
       position: absolute;
       top: 10px;
@@ -51,15 +53,8 @@
   }
 
   &-meal {
-    //Apparition progressive des éléments du menu (augmentation du animation-delay à chaque nouvel élément)
-    @for $i from 0 through 50 {
-      &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 100}ms;
-      }
-    }
-
+    @include animate-appear;
     flex-wrap: nowrap;
-    animation: appear 800ms both;
 
     .card__subheading, .card__heading {
       overflow: hidden;
