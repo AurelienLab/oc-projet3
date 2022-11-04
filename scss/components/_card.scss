@@ -10,7 +10,12 @@
   @include box-shadow();
 
   &__heading {
+    font-size: 1.1rem;
     margin-bottom: 5px;
+  }
+
+  &__subheading {
+    font-size: 1rem;
   }
 
   &__informations {
@@ -44,17 +49,19 @@
       width: 20%;
     }
   }
+
   &-meal {
-    //Apparition progressive des éléments du menu (augmentation du animation-delai à chaque nouvel élément)
+    //Apparition progressive des éléments du menu (augmentation du animation-delay à chaque nouvel élément)
     @for $i from 0 through 50 {
       &:nth-child(#{$i}n) {
-        animation-delay: #{$i * 0.2}s;
+        animation-delay: #{$i * 100}ms;
       }
     }
 
     flex-wrap: nowrap;
     animation: appear 800ms both;
-    .card__subheading {
+
+    .card__subheading, .card__heading {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
@@ -65,8 +72,8 @@
     }
 
     &__btn-select {
-      width: 15%;
-      margin-right: -15%;
+      width: 19%;
+      margin-right: -19%;
       font-size: 1.7rem;
       background: map-get($colors-map, tertiary, base);
       border: none;

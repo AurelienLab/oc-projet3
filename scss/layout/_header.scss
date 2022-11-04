@@ -1,10 +1,13 @@
 .header {
   display: flex;
-  position: relative;
+  position: fixed;
+  z-index: 100;
+  top: 0;
   width: 100%;
   background: $bg-primary;
   padding: 15px;
   justify-content: center;
+
   @include box-shadow();
 
   &__logo {
