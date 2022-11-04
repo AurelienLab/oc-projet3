@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
+    <base href="../"> <!-- Aller chercher dans le dossier parent tous les liens -->
     <title>Base menu - ohmyfood</title>
     <link rel="stylesheet" href="public/css/main.css">
     <script src="https://kit.fontawesome.com/79078f39b1.js" crossorigin="anonymous"></script>
@@ -18,87 +19,38 @@
     </header>
     <main>
         <section class="menu-header no-padding">
-            <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+            <img src="public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="&Agrave; la française">
         </section>
         <section class="menu">
             <h1 class="menu__heading">A la française</h1>
             <div class="btn-like">
                 <i class="icon fa-regular fa-heart"></i>
             </div>
-                <h2 class="menu__category__heading">Entrées</h2>
-                <article class="card card-meal">
-                    <div class="card__informations">
-                        <h3 class="card__heading">
-                            Velouté de poulpe acidulé
-                        </h3>
-                        <p class="card__subheading">
-                            Aux zestes d'orange pour le test du agaga huhu texte mdr
-                        </p>
-                    </div>
-                    <div class="card-meal__price">
-                        35€
-                    </div>
-                    <button class="card-meal__btn-select">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </button>
-                </article>
-                <article class="card card-meal">
-                    <div class="card__informations">
-                        <h3 class="card__heading">
-                            Velouté de poulpe acidulé
-                        </h3>
-                        <p class="card__subheading">
-                            Aux zestes d'orange pour le test du agaga huhu texte mdr
-                        </p>
-                    </div>
-                    <div class="card-meal__price">
-                        35€
-                    </div>
-                    <button class="card-meal__btn-select">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </button>
-                </article>
 
-                <h2 class="menu__category__heading">Entrées</h2>
-                <article class="card card-meal">
-                    <div class="card__informations">
-                        <h3 class="card__heading">
-                            Velouté de poulpe acidulé
-                        </h3>
-                        <p class="card__subheading">
-                            Aux zestes d'orange pour le test du agaga huhu texte mdr
-                        </p>
-                    </div>
-                    <div class="card-meal__price">
-                        35€
-                    </div>
-                    <button class="card-meal__btn-select">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </button>
-                </article>
-                <article class="card card-meal">
-                    <div class="card__informations">
-                        <h3 class="card__heading">
-                            Velouté de poulpe acidulé
-                        </h3>
-                        <p class="card__subheading">
-                            Aux zestes d'orange pour le test du agaga huhu texte mdr
-                        </p>
-                    </div>
-                    <div class="card-meal__price">
-                        35€
-                    </div>
-                    <button class="card-meal__btn-select">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </button>
-                </article>
+            <h2 class="menu__category__heading">Entrées</h2>
             <article class="card card-meal">
                 <div class="card__informations">
                     <h3 class="card__heading">
-                        Velouté de poulpe acidulé
+                        Tartare de poulpe acidulé
                     </h3>
                     <p class="card__subheading">
-                        Aux zestes d'orange pour le test du agaga huhu texte mdr
+                        Aux zestes d'orange
+                    </p>
+                </div>
+                <div class="card-meal__price">
+                    25€
+                </div>
+                <button class="card-meal__btn-select">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </article>
+            <article class="card card-meal">
+                <div class="card__informations">
+                    <h3 class="card__heading">
+                        Velouté de légumes d'antan
+                    </h3>
+                    <p class="card__subheading">
+                        Carotte, panais, topinambour
                     </p>
                 </div>
                 <div class="card-meal__price">
@@ -111,10 +63,44 @@
             <article class="card card-meal">
                 <div class="card__informations">
                     <h3 class="card__heading">
-                        Velouté de poulpe acidulé
+                        Soupe à l'oignon
                     </h3>
                     <p class="card__subheading">
-                        Aux zestes d'orange pour le test du agaga huhu texte mdr
+                        Revisitée
+                    </p>
+                </div>
+                <div class="card-meal__price">
+                    20€
+                </div>
+                <button class="card-meal__btn-select">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </article>
+
+            <h2 class="menu__category__heading">Plats</h2>
+            <article class="card card-meal">
+                <div class="card__informations">
+                    <h3 class="card__heading">
+                        Coquilles Saint-Jacques
+                    </h3>
+                    <p class="card__subheading">
+                        Accompagnées d'une purée de panais
+                    </p>
+                </div>
+                <div class="card-meal__price">
+                    40€
+                </div>
+                <button class="card-meal__btn-select">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </article>
+            <article class="card card-meal">
+                <div class="card__informations">
+                    <h3 class="card__heading">
+                        Magret de canard
+                    </h3>
+                    <p class="card__subheading">
+                        Et parmentier de pommes de terre
                     </p>
                 </div>
                 <div class="card-meal__price">
@@ -127,14 +113,32 @@
             <article class="card card-meal">
                 <div class="card__informations">
                     <h3 class="card__heading">
-                        Velouté de poulpe acidulé
+                        Pigeonneau d’Ille-et-Vilaine
                     </h3>
                     <p class="card__subheading">
-                        Aux zestes d'orange pour le test du agaga huhu texte mdr
+                        Sur son lit de gnocchis aux légumes
                     </p>
                 </div>
                 <div class="card-meal__price">
-                    35€
+                    44€
+                </div>
+                <button class="card-meal__btn-select">
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </article>
+
+            <h2 class="menu__category__heading">Désserts</h2>
+            <article class="card card-meal">
+                <div class="card__informations">
+                    <h3 class="card__heading">
+                        Pétales de violettes glacés
+                    </h3>
+                    <p class="card__subheading">
+                        Et purée de noisettes
+                    </p>
+                </div>
+                <div class="card-meal__price">
+                    18€
                 </div>
                 <button class="card-meal__btn-select">
                     <i class="fa-solid fa-circle-check"></i>
@@ -143,14 +147,14 @@
             <article class="card card-meal">
                 <div class="card__informations">
                     <h3 class="card__heading">
-                        Velouté de poulpe acidulé
+                        Fondant au chocolat
                     </h3>
                     <p class="card__subheading">
-                        Aux zestes d'orange pour le test du agaga huhu texte mdr
+                        Revisité
                     </p>
                 </div>
                 <div class="card-meal__price">
-                    35€
+                    22€
                 </div>
                 <button class="card-meal__btn-select">
                     <i class="fa-solid fa-circle-check"></i>
@@ -159,30 +163,14 @@
             <article class="card card-meal">
                 <div class="card__informations">
                     <h3 class="card__heading">
-                        Velouté de poulpe acidulé
+                        Millefeuille croustillant
                     </h3>
                     <p class="card__subheading">
-                        Aux zestes d'orange pour le test du agaga huhu texte mdr
+                        Myrtilles et pâte d’amande
                     </p>
                 </div>
                 <div class="card-meal__price">
-                    35€
-                </div>
-                <button class="card-meal__btn-select">
-                    <i class="fa-solid fa-circle-check"></i>
-                </button>
-            </article>
-            <article class="card card-meal">
-                <div class="card__informations">
-                    <h3 class="card__heading">
-                        Velouté de poulpe acidulé
-                    </h3>
-                    <p class="card__subheading">
-                        Aux zestes d'orange pour le test du agaga huhu texte mdr
-                    </p>
-                </div>
-                <div class="card-meal__price">
-                    35€
+                    23€
                 </div>
                 <button class="card-meal__btn-select">
                     <i class="fa-solid fa-circle-check"></i>
@@ -216,7 +204,7 @@
                 </a>
             </li>
             <li class="footer__element">
-                <a href="#">
+                <a href="mailto:example@example.net">
                     Contact
                 </a>
             </li>

@@ -42,6 +42,7 @@
   align-items: center;
   font-size: 1.4rem;
   position: relative;
+  -webkit-tap-highlight-color: transparent; //Supprimer le fond bleu qui apparait au clic
   i {
     position: relative;
     cursor: pointer;

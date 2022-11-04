@@ -134,6 +134,7 @@
   align-items: center;
   font-size: 1.4rem;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
 }
 .btn-like i {
   position: relative;
@@ -856,6 +857,9 @@ section {
   padding-top: 35px;
   border-radius: 3rem 3rem 0 0;
 }
+.menu article {
+  width: 100%;
+}
 .menu__heading {
   font-family: Shrikhand, Georgia, fantasy;
   font-size: 1.8rem;
@@ -878,7 +882,7 @@ section {
   height: 7px;
   border-bottom: 3px solid #99E2D0;
 }
-.menu button {
+.menu > button {
   margin-top: 25px;
 }
 
