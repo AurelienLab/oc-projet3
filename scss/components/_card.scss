@@ -89,7 +89,14 @@
     }
   }
   &-meal {
+    @for $i from 0 through 50 {
+      &:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.2}s;
+      }
+    }
+
     flex-wrap: nowrap;
+    animation: appear 800ms both;
     .card__subheading {
       overflow: hidden;
       white-space: nowrap;
@@ -107,7 +114,7 @@
       background: map-get($colors-map, tertiary, base);
       border: none;
       color: #FFFFFF;
-      transition: margin-right 800ms ease-in-out;
+      transition: margin-right 700ms ease-in-out;
     }
 
     &:hover {
@@ -117,7 +124,6 @@
         i {
           animation: rotate 700ms 300ms ease-in-out;
         }
-
       }
     }
   }
