@@ -89,6 +89,7 @@
     }
   }
   &-meal {
+    //Apparition progressive des éléments du menu (augmentation du animation-delai à chaque nouvel élément)
     @for $i from 0 through 50 {
       &:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.2}s;
