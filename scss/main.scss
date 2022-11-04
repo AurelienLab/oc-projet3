@@ -1,6 +1,7 @@
 @import "base/reset";
 @import "base/typography";
 @import "base/animations";
+@import "base/misc";
 
 @import "abstracts/variables";
 @import "abstracts/mixins";
@@ -12,5 +13,8 @@
 @import "components/instructions";
 
 @import "layout/header";
+@import "layout/footer";
 
 @import "themes/theme";
+
+@import "pages/homepage";

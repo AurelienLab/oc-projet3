@@ -9,18 +9,25 @@ a {
   text-decoration: none;
 }
 
-.link-expanded {
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+address {
+  font-style: normal;
 }
 
 .text-muted {
   color: #7E7E7E;
+}
+
+section {
+  padding: map-get($section-padding, vertical) map-get($section-padding, side);
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 700;
 }

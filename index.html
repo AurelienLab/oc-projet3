@@ -3,12 +3,12 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home - ohmyfood</title>
     <link rel="stylesheet" href="public/css/main.css">
     <script src="https://kit.fontawesome.com/79078f39b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header header--menu">
+    <header class="header">
         <a class="header__btn-back" href="index.html">
             <i class="fa-solid fa-arrow-left"></i>
         </a>
@@ -17,117 +17,157 @@
         </a>
     </header>
     <main>
-        <div class="btn-like">
-            <!--                <i class="fa-regular fa-heart"></i>-->
-            <i class="icon fa-regular fa-heart"></i>
-        </div>
-    <!-- INSTRUCTIONS -->
-        <ol class="instructions">
-            <li class="instructions__element instructions__element--primary">
-                <i class="instructions__icon text-muted fa-solid fa-mobile-screen-button"></i>
-                <span class="instructions__text">Choisissez un restaurant</span>
-            </li>
-            <li class="instructions__element instructions__element--primary">
-                <i class="instructions__icon text-muted fa-solid fa-list"></i>
-                <span class="instructions__text">Composez votre menu</span>
-            </li>
-            <li class="instructions__element instructions__element--primary">
-                <i class="instructions__icon text-muted fa-solid fa-store"></i>
-                <span class="instructions__text">Dégustez au restaurant</span>
-            </li>
-        </ol>
-    <!-- BUTTON -->
-        <button class="btn btn--primary">Explorer nos restaurants</button>
-    <!-- CARD RESTAURANT -->
-        <article class="card card-restaurant">
-            <div class="card-restaurant__illustration">
-                <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant test">
-            </div>
-            <div class="card__informations">
-                <h3 class="card__heading">
-                    <a href="#" class="link-expanded">Nom du restaurant</a>
-                </h3>
-                <p class="card__subheading">
-                    Ville du restaurant
-                </p>
-            </div>
-            <div class="btn-like">
-<!--                <i class="fa-regular fa-heart"></i>-->
-                <i class="icon fa-regular fa-heart"></i>
-            </div>
+        <section class="localisation">
+            <address>
+                <i class="fa-solid fa-location-dot"></i>
+                Paris, Belleville
+            </address>
+        </section>
+        <section class="introduction text-center">
+            <h1 class="section-heading">Réservez le menu qui vous convient</h1>
+            <p>
+                Découvrez des restaurants d'exception, selectionnés par nos soins.
+            </p>
+            <button class="btn btn--primary">Explorer nos restaurants</button>
+        </section>
 
-            <div class="badge badge--tertiary">
-                Nouveau
+        <section class="howto">
+            <h2 class="section-heading">Fonctionnement</h2>
+            <ol class="instructions">
+                <li class="instructions__element instructions__element--primary">
+                    <i class="instructions__icon text-muted fa-solid fa-mobile-screen-button"></i>
+                    <span class="instructions__text">Choisissez un restaurant</span>
+                </li>
+                <li class="instructions__element instructions__element--primary">
+                    <i class="instructions__icon text-muted fa-solid fa-list"></i>
+                    <span class="instructions__text">Composez votre menu</span>
+                </li>
+                <li class="instructions__element instructions__element--primary">
+                    <i class="instructions__icon text-muted fa-solid fa-store"></i>
+                    <span class="instructions__text">Dégustez au restaurant</span>
+                </li>
+            </ol>
+        </section>
+
+        <section class="restaurants">
+            <h2 class="section-heading">Restaurants</h2>
+            <div class="flex-container">
+                <article class="card card-restaurant">
+                    <div class="card-restaurant__illustration">
+                        <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant test">
+                    </div>
+                    <div class="card__informations">
+                        <h3 class="card__heading">
+                            <a href="#" class="link-expanded">Nom du restaurant</a>
+                        </h3>
+                        <p class="card__subheading">
+                            Ville du restaurant
+                        </p>
+                    </div>
+                    <div class="btn-like">
+                        <!--                <i class="fa-regular fa-heart"></i>-->
+                        <i class="icon fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="badge badge--tertiary">
+                        Nouveau
+                    </div>
+                </article>
+                <article class="card card-restaurant">
+                    <div class="card-restaurant__illustration">
+                        <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant test">
+                    </div>
+                    <div class="card__informations">
+                        <h3 class="card__heading">
+                            <a href="#" class="link-expanded">Nom du restaurant</a>
+                        </h3>
+                        <p class="card__subheading">
+                            Ville du restaurant
+                        </p>
+                    </div>
+                    <div class="btn-like">
+                        <!--                <i class="fa-regular fa-heart"></i>-->
+                        <i class="icon fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="badge badge--tertiary">
+                        Nouveau
+                    </div>
+                </article>
+                <article class="card card-restaurant">
+                    <div class="card-restaurant__illustration">
+                        <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant test">
+                    </div>
+                    <div class="card__informations">
+                        <h3 class="card__heading">
+                            <a href="#" class="link-expanded">Nom du restaurant</a>
+                        </h3>
+                        <p class="card__subheading">
+                            Ville du restaurant
+                        </p>
+                    </div>
+                    <div class="btn-like">
+                        <!--                <i class="fa-regular fa-heart"></i>-->
+                        <i class="icon fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="badge badge--tertiary">
+                        Nouveau
+                    </div>
+                </article>
+                <article class="card card-restaurant">
+                    <div class="card-restaurant__illustration">
+                        <img src="public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Restaurant test">
+                    </div>
+                    <div class="card__informations">
+                        <h3 class="card__heading">
+                            <a href="#" class="link-expanded">Nom du restaurant</a>
+                        </h3>
+                        <p class="card__subheading">
+                            Ville du restaurant
+                        </p>
+                    </div>
+                    <div class="btn-like">
+                        <!--                <i class="fa-regular fa-heart"></i>-->
+                        <i class="icon fa-regular fa-heart"></i>
+                    </div>
+
+                    <div class="badge badge--tertiary">
+                        Nouveau
+                    </div>
+                </article>
             </div>
-        </article>
-    <!-- CARD MEAL -->
-        <article class="card card-meal">
-            <div class="card__informations">
-                <h3 class="card__heading">
-                    <a href="#" class="link-expanded">Velouté de poulpe acidulé</a>
-                </h3>
-                <p class="card__subheading">
-                    Aux zestes d'orange pour le test du agaga huhu texte mdr
-                </p>
-            </div>
-            <div class="card-meal__price">
-                35€
-            </div>
-            <button class="card-meal__btn-select">
-                <i class="fa-solid fa-circle-check"></i>
-            </button>
-        </article>
-        <article class="card card-meal">
-            <div class="card__informations">
-                <h3 class="card__heading">
-                    Velouté de poulpe acidulé
-                </h3>
-                <p class="card__subheading">
-                    Aux zestes d'orange pour le test du agaga huhu texte mdr
-                </p>
-            </div>
-            <div class="card-meal__price">
-                35€
-            </div>
-            <button class="card-meal__btn-select">
-                <i class="fa-solid fa-circle-check"></i>
-            </button>
-        </article>
-        <article class="card card-meal">
-            <div class="card__informations">
-                <h3 class="card__heading">
-                    Velouté de poulpe acidulé
-                </h3>
-                <p class="card__subheading">
-                    Aux zestes d'orange pour le test du agaga huhu texte mdr
-                </p>
-            </div>
-            <div class="card-meal__price">
-                35€
-            </div>
-            <button class="card-meal__btn-select">
-                <i class="fa-solid fa-circle-check"></i>
-            </button>
-        </article>
-        <article class="card card-meal">
-            <div class="card__informations">
-                <h3 class="card__heading">
-                    Velouté de poulpe acidulé
-                </h3>
-                <p class="card__subheading">
-                    Aux zestes d'orange pour le test du agaga huhu texte mdr
-                </p>
-            </div>
-            <div class="card-meal__price">
-                35€
-            </div>
-            <button class="card-meal__btn-select">
-                <i class="fa-solid fa-circle-check"></i>
-            </button>
-        </article>
+        </section>
+
+        <footer class="footer">
+            <a href="index.html" class="footer__logo">
+                ohmyfood
+            </a>
+            <ul class="footer__list">
+                <li class="footer__element">
+                    <a href="#">
+                        <i class="fa-solid fa-utensils"></i>
+                        Proposer un restaurant
+                    </a>
+                </li>
+                <li class="footer__element">
+                    <a href="#">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        Devenir partenaire
+                    </a>
+                </li>
+                <li class="footer__element">
+                    <a href="#">
+                        Mentions légales
+                    </a>
+                </li>
+                <li class="footer__element">
+                    <a href="#">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </footer>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
