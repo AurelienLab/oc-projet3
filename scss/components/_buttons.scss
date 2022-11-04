@@ -32,6 +32,46 @@
     z-index: -1;
     @include box-shadow(0.4);
   }
+}
 
+.btn-like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: relative;
+  i {
+    position: relative;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+    &::before {
+      opacity: 1;
+      transition: inherit;
+    }
+    &::after {
+      font: var(--fa-font-solid);
+      content: "\f004";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: gradient();
+      background-size: 100%;
+      background-repeat: repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      transition: inherit;
+    }
 
+    &:hover::after {
+      animation: bounce 400ms alternate both;
+      opacity: 1;
+    }
+    &:hover::before {
+      opacity: 0;
+    }
+  }
 }
