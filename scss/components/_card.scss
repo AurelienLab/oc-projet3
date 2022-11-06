@@ -53,7 +53,7 @@
   }
 
   &-meal {
-    @include animate-appear;
+
     flex-wrap: nowrap;
 
     .card__subheading, .card__heading {
