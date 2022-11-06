@@ -1,8 +1,12 @@
-@function gradient($color1: $color-primary, $color2: $color-secondary, $angle: 0deg ) {
+@function gradient($color1: map-get($colors-map, primary, base),
+                   $color2: map-get($colors-map, secondary, base),
+                   $angle: 0deg ) {
   @return linear-gradient($angle, $color1 0%, $color2 100%);
 }
 
-@function lighter-gradient($color1: $color-primary, $color2: $color-secondary, $angle: 0deg ) {
+@function lighter-gradient($color1: map-get($colors-map, primary, base),
+                           $color2: map-get($colors-map, secondary, base),
+                           $angle: 0deg) {
   $delta: 5%;
   @return linear-gradient($angle, lighten($color1, $delta) 0%, lighten($color2, $delta) 100%);
 }
