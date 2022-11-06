@@ -1,6 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+html, body {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 65px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -108,6 +116,7 @@
 }
 
 .btn {
+  display: inline-block;
   position: relative;
   border: none;
   min-width: 60%;
@@ -709,12 +718,12 @@
 
 .loading-container {
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   background: #fdfdfe;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
