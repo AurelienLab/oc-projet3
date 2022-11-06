@@ -43,6 +43,19 @@
     transform: translateY(0);
   }
 }
+@keyframes remove {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  99% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(0);
+  }
+}
 .link-expanded::before {
   content: "";
   display: block;
@@ -694,6 +707,108 @@
   font-weight: 500;
 }
 
+.loading-container {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fdfdfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loading-container .loading {
+  position: relative;
+}
+.loading-container .loading__dot {
+  position: absolute;
+  left: -12.5px;
+  top: -12.5px;
+  width: 25px;
+  height: 25px;
+  background: #9356DC;
+  border-radius: 50%;
+}
+.loading-container .loading__dot--main {
+  z-index: 2;
+  background: #9356DC;
+  width: 75px;
+  height: 75px;
+  left: -37.5px;
+  top: -37.5px;
+  animation: loading-main 3s 0.5s cubic-bezier(0.52, -0.01, 0, 1.53) infinite both;
+}
+.loading-container .loading__dot--left {
+  z-index: 1;
+  background: #FF79DA;
+  transform-origin: 160% center;
+  animation: loading-left 3s 0.5s cubic-bezier(0.52, -0.01, 0, 1.53) infinite both;
+}
+.loading-container .loading__dot--right {
+  background: #99E2D0;
+  z-index: 1;
+  transform-origin: -60% center;
+  animation: loading-right 3s 0.5s cubic-bezier(0.52, -0.01, 0, 1.53) infinite both;
+}
+
+/**
+ANIMATIONS
+ */
+@keyframes loading-main {
+  0% {
+    animation-timing-function: cubic-bezier(0.72, 0.08, 0.32, 0.69);
+    transform: scale(1);
+  }
+  15% {
+    animation-timing-function: cubic-bezier(0.72, 0.08, 0.32, 0.69);
+    transform: scale(0.5);
+  }
+  30%, 65% {
+    transform: scale(0.33);
+  }
+  85% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loading-left {
+  0% {
+    animation-timing-function: cubic-bezier(0.72, 0.08, 0.32, 0.69);
+    transform-origin: 50% center;
+    transform: scale(2) translateX(0%) rotate(0deg);
+  }
+  15%, 30% {
+    transform-origin: 160% center;
+    transform: scale(1) translateX(-110%) rotate(0deg);
+  }
+  60% {
+    transform: translateX(-110%) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.4) translateX(-180%) rotate(180deg);
+  }
+}
+@keyframes loading-right {
+  0%, 15% {
+    animation-timing-function: cubic-bezier(0.72, 0.08, 0.32, 0.69);
+    transform-origin: 50% center;
+    transform: scale(1.5) translateX(0%) rotate(0deg);
+  }
+  30% {
+    transform-origin: -60% center;
+    transform: translateX(110%) rotate(0deg);
+  }
+  60%, 85% {
+    transform: translateX(110%) rotate(180deg);
+  }
+  100% {
+    transform: scale(2.9) translateX(145%) rotate(180deg);
+  }
+}
 .header {
   display: flex;
   position: fixed;
@@ -829,6 +944,11 @@ section {
 }
 .restaurants .flex-container {
   flex-direction: column;
+}
+
+.loading-container {
+  opacity: 0;
+  animation: remove 400ms 4s both;
 }
 
 .menu-header {

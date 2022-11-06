@@ -39,3 +39,8 @@
     flex-direction: column;
   }
 }
+
+.loading-container {
+  opacity: 0;
+  animation: remove 400ms 4s both;
+}

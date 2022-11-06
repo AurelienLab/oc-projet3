@@ -1,0 +1,130 @@
+
+$dot-size: 25px;
+$animation-duration: 3s;
+$animation-delay: 0.5s;
+$animation-timing: cubic-bezier(.52,-0.01,0,1.53);
+
+.loading-container {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: $bg-primary;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loading {
+    position: relative;
+    &__dot {
+      position: absolute;
+      left: -(calc($dot-size/2));
+      top: -(calc($dot-size/2));
+      width: $dot-size;
+      height: $dot-size;
+      background: map-get($colors-map, primary, base);
+      border-radius: 50%;
+
+      &--main {
+        z-index: 2;
+        background: map-get($colors-map, primary, base);
+        width: $dot-size * 3;
+        height: $dot-size * 3;
+        left: -(calc($dot-size*3/2));
+        top: -(calc($dot-size*3/2));
+        animation: loading-main $animation-duration $animation-delay $animation-timing infinite both;
+      }
+
+      &--left {
+        z-index: 1;
+        background: map-get($colors-map, secondary, base);
+        transform-origin: 160% center;
+        animation: loading-left $animation-duration $animation-delay $animation-timing infinite both;
+        //transform-origin: 50% center;
+        //transform:  scale(3) translateX(0%) rotate(0deg);
+      }
+
+      &--right {
+        background: map-get($colors-map, tertiary, base);
+        z-index: 1;
+        //display: none;
+        transform-origin: -60% center;
+        animation: loading-right $animation-duration $animation-delay $animation-timing infinite both;
+      }
+    }
+  }
+}
+
+
+/**
+ANIMATIONS
+ */
+
+@keyframes loading-main {
+  0% {
+    animation-timing-function: cubic-bezier(.72,.08,.32,.69);
+    transform: scale(1);
+  }
+
+  15% {
+    animation-timing-function: cubic-bezier(.72,.08,.32,.69);
+    transform: scale(0.50);
+  }
+
+  30%,65% {
+    transform: scale(0.33);
+  }
+
+  85% {
+    transform: scale(0.50);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes loading-left {
+  0% {
+    animation-timing-function: cubic-bezier(.72,.08,.32,.69);
+    transform-origin: 50% center;
+    transform:  scale(2) translateX(0%) rotate(0deg);
+  }
+
+  15%,30% {
+    transform-origin: 160% center;
+    transform: scale(1) translateX(-110%) rotate(0deg);
+  }
+
+  60% {
+    transform: translateX(-110%) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1.4) translateX(-180%) rotate(180deg);
+  }
+}
+
+@keyframes loading-right {
+  0%, 15% {
+    animation-timing-function: cubic-bezier(.72,.08,.32,.69);
+    transform-origin: 50% center;
+    transform:  scale(1.5) translateX(0%) rotate(0deg);
+  }
+
+  30% {
+    transform-origin: -60% center;
+    transform: translateX(110%) rotate(0deg);
+  }
+
+  60%, 85% {
+    transform: translateX(110%) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(2.9) translateX(145%) rotate(180deg);
+  }
+}
