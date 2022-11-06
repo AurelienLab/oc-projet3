@@ -37,6 +37,17 @@
 
   .flex-container {
     flex-direction: column;
+    @include tablet-only{
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 49%;
+        flex-grow: 1;
+      }
+    }
   }
 }
 

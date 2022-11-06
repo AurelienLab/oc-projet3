@@ -5,6 +5,10 @@
   list-style: none;
   counter-reset: li;
   margin-left: 12px;
+  max-width: 400px;
+  margin-left:auto;
+  margin-right: auto;
+
   &__element {
     @include box-shadow();
 
@@ -57,6 +61,10 @@
       text-align: center;
       padding: 4px;
     }
+
+    @include desktop-only {
+      flex-grow: 1;
+    }
   }
 
   &__icon {
@@ -70,5 +78,15 @@
   &__text {
     font-size: 1rem;
     font-weight: 500;
+  }
+
+  @include tablet-only {
+
+  }
+
+  @include desktop-only {
+    gap: 5%;
+    max-width: 98%;
+    flex-direction: row;
   }
 }
