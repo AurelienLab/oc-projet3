@@ -6,17 +6,16 @@
 @import "base/typography";
 @import "base/animations";
 @import "base/misc";
+@import "base/elements";
 
 @import "components/badge";
 @import "components/buttons";
 @import "components/card";
-@import "components/instructions";
 @import "components/loading";
 
 @import "layout/header";
 @import "layout/footer";
-
-@import "themes/theme";
+@import "layout/instructions";
 
 @import "pages/homepage";
 @import "pages/menu";
