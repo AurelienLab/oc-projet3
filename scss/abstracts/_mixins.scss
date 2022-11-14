@@ -27,7 +27,7 @@
   border-radius: inherit;
 }
 
-@mixin animate-appear ($duration: 800, $delay: 100){
+@mixin animate-appear ($duration: 800, $delay: 400){
   animation: appear #{$duration}ms both;
   //Apparition progressive des éléments du menu (augmentation du animation-delay à chaque nouvel élément)
   @for $i from 0 through 50 {

@@ -6,7 +6,6 @@ html, body {
 }
 
 body {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   background: #f5f5f6;
@@ -245,154 +244,154 @@ main {
   animation-delay: 0ms;
 }
 .card-restaurant:nth-of-type(1n) {
-  animation-delay: 100ms;
-}
-.card-restaurant:nth-of-type(2n) {
-  animation-delay: 200ms;
-}
-.card-restaurant:nth-of-type(3n) {
-  animation-delay: 300ms;
-}
-.card-restaurant:nth-of-type(4n) {
   animation-delay: 400ms;
 }
-.card-restaurant:nth-of-type(5n) {
-  animation-delay: 500ms;
-}
-.card-restaurant:nth-of-type(6n) {
-  animation-delay: 600ms;
-}
-.card-restaurant:nth-of-type(7n) {
-  animation-delay: 700ms;
-}
-.card-restaurant:nth-of-type(8n) {
+.card-restaurant:nth-of-type(2n) {
   animation-delay: 800ms;
 }
-.card-restaurant:nth-of-type(9n) {
-  animation-delay: 900ms;
-}
-.card-restaurant:nth-of-type(10n) {
-  animation-delay: 1000ms;
-}
-.card-restaurant:nth-of-type(11n) {
-  animation-delay: 1100ms;
-}
-.card-restaurant:nth-of-type(12n) {
+.card-restaurant:nth-of-type(3n) {
   animation-delay: 1200ms;
 }
-.card-restaurant:nth-of-type(13n) {
-  animation-delay: 1300ms;
-}
-.card-restaurant:nth-of-type(14n) {
-  animation-delay: 1400ms;
-}
-.card-restaurant:nth-of-type(15n) {
-  animation-delay: 1500ms;
-}
-.card-restaurant:nth-of-type(16n) {
+.card-restaurant:nth-of-type(4n) {
   animation-delay: 1600ms;
 }
-.card-restaurant:nth-of-type(17n) {
-  animation-delay: 1700ms;
-}
-.card-restaurant:nth-of-type(18n) {
-  animation-delay: 1800ms;
-}
-.card-restaurant:nth-of-type(19n) {
-  animation-delay: 1900ms;
-}
-.card-restaurant:nth-of-type(20n) {
+.card-restaurant:nth-of-type(5n) {
   animation-delay: 2000ms;
 }
-.card-restaurant:nth-of-type(21n) {
-  animation-delay: 2100ms;
-}
-.card-restaurant:nth-of-type(22n) {
-  animation-delay: 2200ms;
-}
-.card-restaurant:nth-of-type(23n) {
-  animation-delay: 2300ms;
-}
-.card-restaurant:nth-of-type(24n) {
+.card-restaurant:nth-of-type(6n) {
   animation-delay: 2400ms;
 }
-.card-restaurant:nth-of-type(25n) {
-  animation-delay: 2500ms;
-}
-.card-restaurant:nth-of-type(26n) {
-  animation-delay: 2600ms;
-}
-.card-restaurant:nth-of-type(27n) {
-  animation-delay: 2700ms;
-}
-.card-restaurant:nth-of-type(28n) {
+.card-restaurant:nth-of-type(7n) {
   animation-delay: 2800ms;
 }
-.card-restaurant:nth-of-type(29n) {
-  animation-delay: 2900ms;
-}
-.card-restaurant:nth-of-type(30n) {
-  animation-delay: 3000ms;
-}
-.card-restaurant:nth-of-type(31n) {
-  animation-delay: 3100ms;
-}
-.card-restaurant:nth-of-type(32n) {
+.card-restaurant:nth-of-type(8n) {
   animation-delay: 3200ms;
 }
-.card-restaurant:nth-of-type(33n) {
-  animation-delay: 3300ms;
-}
-.card-restaurant:nth-of-type(34n) {
-  animation-delay: 3400ms;
-}
-.card-restaurant:nth-of-type(35n) {
-  animation-delay: 3500ms;
-}
-.card-restaurant:nth-of-type(36n) {
+.card-restaurant:nth-of-type(9n) {
   animation-delay: 3600ms;
 }
-.card-restaurant:nth-of-type(37n) {
-  animation-delay: 3700ms;
-}
-.card-restaurant:nth-of-type(38n) {
-  animation-delay: 3800ms;
-}
-.card-restaurant:nth-of-type(39n) {
-  animation-delay: 3900ms;
-}
-.card-restaurant:nth-of-type(40n) {
+.card-restaurant:nth-of-type(10n) {
   animation-delay: 4000ms;
 }
-.card-restaurant:nth-of-type(41n) {
-  animation-delay: 4100ms;
-}
-.card-restaurant:nth-of-type(42n) {
-  animation-delay: 4200ms;
-}
-.card-restaurant:nth-of-type(43n) {
-  animation-delay: 4300ms;
-}
-.card-restaurant:nth-of-type(44n) {
+.card-restaurant:nth-of-type(11n) {
   animation-delay: 4400ms;
 }
-.card-restaurant:nth-of-type(45n) {
-  animation-delay: 4500ms;
-}
-.card-restaurant:nth-of-type(46n) {
-  animation-delay: 4600ms;
-}
-.card-restaurant:nth-of-type(47n) {
-  animation-delay: 4700ms;
-}
-.card-restaurant:nth-of-type(48n) {
+.card-restaurant:nth-of-type(12n) {
   animation-delay: 4800ms;
 }
+.card-restaurant:nth-of-type(13n) {
+  animation-delay: 5200ms;
+}
+.card-restaurant:nth-of-type(14n) {
+  animation-delay: 5600ms;
+}
+.card-restaurant:nth-of-type(15n) {
+  animation-delay: 6000ms;
+}
+.card-restaurant:nth-of-type(16n) {
+  animation-delay: 6400ms;
+}
+.card-restaurant:nth-of-type(17n) {
+  animation-delay: 6800ms;
+}
+.card-restaurant:nth-of-type(18n) {
+  animation-delay: 7200ms;
+}
+.card-restaurant:nth-of-type(19n) {
+  animation-delay: 7600ms;
+}
+.card-restaurant:nth-of-type(20n) {
+  animation-delay: 8000ms;
+}
+.card-restaurant:nth-of-type(21n) {
+  animation-delay: 8400ms;
+}
+.card-restaurant:nth-of-type(22n) {
+  animation-delay: 8800ms;
+}
+.card-restaurant:nth-of-type(23n) {
+  animation-delay: 9200ms;
+}
+.card-restaurant:nth-of-type(24n) {
+  animation-delay: 9600ms;
+}
+.card-restaurant:nth-of-type(25n) {
+  animation-delay: 10000ms;
+}
+.card-restaurant:nth-of-type(26n) {
+  animation-delay: 10400ms;
+}
+.card-restaurant:nth-of-type(27n) {
+  animation-delay: 10800ms;
+}
+.card-restaurant:nth-of-type(28n) {
+  animation-delay: 11200ms;
+}
+.card-restaurant:nth-of-type(29n) {
+  animation-delay: 11600ms;
+}
+.card-restaurant:nth-of-type(30n) {
+  animation-delay: 12000ms;
+}
+.card-restaurant:nth-of-type(31n) {
+  animation-delay: 12400ms;
+}
+.card-restaurant:nth-of-type(32n) {
+  animation-delay: 12800ms;
+}
+.card-restaurant:nth-of-type(33n) {
+  animation-delay: 13200ms;
+}
+.card-restaurant:nth-of-type(34n) {
+  animation-delay: 13600ms;
+}
+.card-restaurant:nth-of-type(35n) {
+  animation-delay: 14000ms;
+}
+.card-restaurant:nth-of-type(36n) {
+  animation-delay: 14400ms;
+}
+.card-restaurant:nth-of-type(37n) {
+  animation-delay: 14800ms;
+}
+.card-restaurant:nth-of-type(38n) {
+  animation-delay: 15200ms;
+}
+.card-restaurant:nth-of-type(39n) {
+  animation-delay: 15600ms;
+}
+.card-restaurant:nth-of-type(40n) {
+  animation-delay: 16000ms;
+}
+.card-restaurant:nth-of-type(41n) {
+  animation-delay: 16400ms;
+}
+.card-restaurant:nth-of-type(42n) {
+  animation-delay: 16800ms;
+}
+.card-restaurant:nth-of-type(43n) {
+  animation-delay: 17200ms;
+}
+.card-restaurant:nth-of-type(44n) {
+  animation-delay: 17600ms;
+}
+.card-restaurant:nth-of-type(45n) {
+  animation-delay: 18000ms;
+}
+.card-restaurant:nth-of-type(46n) {
+  animation-delay: 18400ms;
+}
+.card-restaurant:nth-of-type(47n) {
+  animation-delay: 18800ms;
+}
+.card-restaurant:nth-of-type(48n) {
+  animation-delay: 19200ms;
+}
 .card-restaurant:nth-of-type(49n) {
-  animation-delay: 4900ms;
+  animation-delay: 19600ms;
 }
 .card-restaurant:nth-of-type(50n) {
-  animation-delay: 5000ms;
+  animation-delay: 20000ms;
 }
 @media screen and (min-width: 768px) {
   .card-restaurant {
@@ -712,7 +711,6 @@ ANIMATIONS
   background: #fdfdfe;
   padding: 15px;
   justify-content: center;
-  max-width: 1200px;
   box-shadow: 0px 4px 5px -1px rgba(0, 0, 0, 0.19);
   /* Uniquement lorsque le header a la classe header--menu attachée */
 }
@@ -984,154 +982,154 @@ section {
   animation-delay: 0ms;
 }
 .menu .card-meal:nth-of-type(1n) {
-  animation-delay: 100ms;
-}
-.menu .card-meal:nth-of-type(2n) {
-  animation-delay: 200ms;
-}
-.menu .card-meal:nth-of-type(3n) {
-  animation-delay: 300ms;
-}
-.menu .card-meal:nth-of-type(4n) {
   animation-delay: 400ms;
 }
-.menu .card-meal:nth-of-type(5n) {
-  animation-delay: 500ms;
-}
-.menu .card-meal:nth-of-type(6n) {
-  animation-delay: 600ms;
-}
-.menu .card-meal:nth-of-type(7n) {
-  animation-delay: 700ms;
-}
-.menu .card-meal:nth-of-type(8n) {
+.menu .card-meal:nth-of-type(2n) {
   animation-delay: 800ms;
 }
-.menu .card-meal:nth-of-type(9n) {
-  animation-delay: 900ms;
-}
-.menu .card-meal:nth-of-type(10n) {
-  animation-delay: 1000ms;
-}
-.menu .card-meal:nth-of-type(11n) {
-  animation-delay: 1100ms;
-}
-.menu .card-meal:nth-of-type(12n) {
+.menu .card-meal:nth-of-type(3n) {
   animation-delay: 1200ms;
 }
-.menu .card-meal:nth-of-type(13n) {
-  animation-delay: 1300ms;
-}
-.menu .card-meal:nth-of-type(14n) {
-  animation-delay: 1400ms;
-}
-.menu .card-meal:nth-of-type(15n) {
-  animation-delay: 1500ms;
-}
-.menu .card-meal:nth-of-type(16n) {
+.menu .card-meal:nth-of-type(4n) {
   animation-delay: 1600ms;
 }
-.menu .card-meal:nth-of-type(17n) {
-  animation-delay: 1700ms;
-}
-.menu .card-meal:nth-of-type(18n) {
-  animation-delay: 1800ms;
-}
-.menu .card-meal:nth-of-type(19n) {
-  animation-delay: 1900ms;
-}
-.menu .card-meal:nth-of-type(20n) {
+.menu .card-meal:nth-of-type(5n) {
   animation-delay: 2000ms;
 }
-.menu .card-meal:nth-of-type(21n) {
-  animation-delay: 2100ms;
-}
-.menu .card-meal:nth-of-type(22n) {
-  animation-delay: 2200ms;
-}
-.menu .card-meal:nth-of-type(23n) {
-  animation-delay: 2300ms;
-}
-.menu .card-meal:nth-of-type(24n) {
+.menu .card-meal:nth-of-type(6n) {
   animation-delay: 2400ms;
 }
-.menu .card-meal:nth-of-type(25n) {
-  animation-delay: 2500ms;
-}
-.menu .card-meal:nth-of-type(26n) {
-  animation-delay: 2600ms;
-}
-.menu .card-meal:nth-of-type(27n) {
-  animation-delay: 2700ms;
-}
-.menu .card-meal:nth-of-type(28n) {
+.menu .card-meal:nth-of-type(7n) {
   animation-delay: 2800ms;
 }
-.menu .card-meal:nth-of-type(29n) {
-  animation-delay: 2900ms;
-}
-.menu .card-meal:nth-of-type(30n) {
-  animation-delay: 3000ms;
-}
-.menu .card-meal:nth-of-type(31n) {
-  animation-delay: 3100ms;
-}
-.menu .card-meal:nth-of-type(32n) {
+.menu .card-meal:nth-of-type(8n) {
   animation-delay: 3200ms;
 }
-.menu .card-meal:nth-of-type(33n) {
-  animation-delay: 3300ms;
-}
-.menu .card-meal:nth-of-type(34n) {
-  animation-delay: 3400ms;
-}
-.menu .card-meal:nth-of-type(35n) {
-  animation-delay: 3500ms;
-}
-.menu .card-meal:nth-of-type(36n) {
+.menu .card-meal:nth-of-type(9n) {
   animation-delay: 3600ms;
 }
-.menu .card-meal:nth-of-type(37n) {
-  animation-delay: 3700ms;
-}
-.menu .card-meal:nth-of-type(38n) {
-  animation-delay: 3800ms;
-}
-.menu .card-meal:nth-of-type(39n) {
-  animation-delay: 3900ms;
-}
-.menu .card-meal:nth-of-type(40n) {
+.menu .card-meal:nth-of-type(10n) {
   animation-delay: 4000ms;
 }
-.menu .card-meal:nth-of-type(41n) {
-  animation-delay: 4100ms;
-}
-.menu .card-meal:nth-of-type(42n) {
-  animation-delay: 4200ms;
-}
-.menu .card-meal:nth-of-type(43n) {
-  animation-delay: 4300ms;
-}
-.menu .card-meal:nth-of-type(44n) {
+.menu .card-meal:nth-of-type(11n) {
   animation-delay: 4400ms;
 }
-.menu .card-meal:nth-of-type(45n) {
-  animation-delay: 4500ms;
-}
-.menu .card-meal:nth-of-type(46n) {
-  animation-delay: 4600ms;
-}
-.menu .card-meal:nth-of-type(47n) {
-  animation-delay: 4700ms;
-}
-.menu .card-meal:nth-of-type(48n) {
+.menu .card-meal:nth-of-type(12n) {
   animation-delay: 4800ms;
 }
+.menu .card-meal:nth-of-type(13n) {
+  animation-delay: 5200ms;
+}
+.menu .card-meal:nth-of-type(14n) {
+  animation-delay: 5600ms;
+}
+.menu .card-meal:nth-of-type(15n) {
+  animation-delay: 6000ms;
+}
+.menu .card-meal:nth-of-type(16n) {
+  animation-delay: 6400ms;
+}
+.menu .card-meal:nth-of-type(17n) {
+  animation-delay: 6800ms;
+}
+.menu .card-meal:nth-of-type(18n) {
+  animation-delay: 7200ms;
+}
+.menu .card-meal:nth-of-type(19n) {
+  animation-delay: 7600ms;
+}
+.menu .card-meal:nth-of-type(20n) {
+  animation-delay: 8000ms;
+}
+.menu .card-meal:nth-of-type(21n) {
+  animation-delay: 8400ms;
+}
+.menu .card-meal:nth-of-type(22n) {
+  animation-delay: 8800ms;
+}
+.menu .card-meal:nth-of-type(23n) {
+  animation-delay: 9200ms;
+}
+.menu .card-meal:nth-of-type(24n) {
+  animation-delay: 9600ms;
+}
+.menu .card-meal:nth-of-type(25n) {
+  animation-delay: 10000ms;
+}
+.menu .card-meal:nth-of-type(26n) {
+  animation-delay: 10400ms;
+}
+.menu .card-meal:nth-of-type(27n) {
+  animation-delay: 10800ms;
+}
+.menu .card-meal:nth-of-type(28n) {
+  animation-delay: 11200ms;
+}
+.menu .card-meal:nth-of-type(29n) {
+  animation-delay: 11600ms;
+}
+.menu .card-meal:nth-of-type(30n) {
+  animation-delay: 12000ms;
+}
+.menu .card-meal:nth-of-type(31n) {
+  animation-delay: 12400ms;
+}
+.menu .card-meal:nth-of-type(32n) {
+  animation-delay: 12800ms;
+}
+.menu .card-meal:nth-of-type(33n) {
+  animation-delay: 13200ms;
+}
+.menu .card-meal:nth-of-type(34n) {
+  animation-delay: 13600ms;
+}
+.menu .card-meal:nth-of-type(35n) {
+  animation-delay: 14000ms;
+}
+.menu .card-meal:nth-of-type(36n) {
+  animation-delay: 14400ms;
+}
+.menu .card-meal:nth-of-type(37n) {
+  animation-delay: 14800ms;
+}
+.menu .card-meal:nth-of-type(38n) {
+  animation-delay: 15200ms;
+}
+.menu .card-meal:nth-of-type(39n) {
+  animation-delay: 15600ms;
+}
+.menu .card-meal:nth-of-type(40n) {
+  animation-delay: 16000ms;
+}
+.menu .card-meal:nth-of-type(41n) {
+  animation-delay: 16400ms;
+}
+.menu .card-meal:nth-of-type(42n) {
+  animation-delay: 16800ms;
+}
+.menu .card-meal:nth-of-type(43n) {
+  animation-delay: 17200ms;
+}
+.menu .card-meal:nth-of-type(44n) {
+  animation-delay: 17600ms;
+}
+.menu .card-meal:nth-of-type(45n) {
+  animation-delay: 18000ms;
+}
+.menu .card-meal:nth-of-type(46n) {
+  animation-delay: 18400ms;
+}
+.menu .card-meal:nth-of-type(47n) {
+  animation-delay: 18800ms;
+}
+.menu .card-meal:nth-of-type(48n) {
+  animation-delay: 19200ms;
+}
 .menu .card-meal:nth-of-type(49n) {
-  animation-delay: 4900ms;
+  animation-delay: 19600ms;
 }
 .menu .card-meal:nth-of-type(50n) {
-  animation-delay: 5000ms;
+  animation-delay: 20000ms;
 }
 .menu > button {
   margin-top: 25px;
