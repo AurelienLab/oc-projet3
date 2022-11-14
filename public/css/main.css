@@ -835,14 +835,22 @@ section {
   background: #e8e8e9;
   color: #353536;
 }
-.localisation address {
+.localisation__container {
   position: relative;
   width: fit-content;
   margin: auto;
 }
-.localisation i {
-  position: absolute;
-  left: -25px;
+.localisation__input {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #353536;
+  text-align: center;
+  width: 145px;
+}
+.localisation__input:focus {
+  outline: none;
 }
 
 .introduction {

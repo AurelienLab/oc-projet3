@@ -9,13 +9,13 @@
     <script src="https://kit.fontawesome.com/79078f39b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="loading-container">
-        <div class="loading">
-            <div class="loading__dot loading__dot--left"></div>
-            <div class="loading__dot loading__dot--main"></div>
-            <div class="loading__dot loading__dot--right"></div>
-        </div>
-    </div>
+<!--    <div class="loading-container">-->
+<!--        <div class="loading">-->
+<!--            <div class="loading__dot loading__dot&#45;&#45;left"></div>-->
+<!--            <div class="loading__dot loading__dot&#45;&#45;main"></div>-->
+<!--            <div class="loading__dot loading__dot&#45;&#45;right"></div>-->
+<!--        </div>-->
+<!--    </div>-->
     <header class="header">
         <a class="header__btn-back" href="index.html">
             <i class="fa-solid fa-arrow-left"></i>
@@ -25,12 +25,14 @@
         </a>
     </header>
     <main>
-        <div class="localisation">
-            <address>
-                <i class="fa-solid fa-location-dot"></i>
-                Paris, Belleville
-            </address>
-        </div>
+        <form class="localisation" method="POST" action="#">
+            <div class="localisation__container">
+                <label for="city" class="localisation__label">
+                    <i class="fa-solid fa-location-dot"></i>
+                </label>
+                <input type="text" name="city" id="city" class="localisation__input" placeholder="Paris, Belleville">
+            </div>
+        </form>
         <section class="introduction text-center">
             <h1 class="section-heading">Réservez le menu qui vous convient</h1>
             <p>
