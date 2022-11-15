@@ -83,6 +83,10 @@
   gap: 20px;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 html, body {
   scroll-behavior: smooth;
 }
