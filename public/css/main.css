@@ -482,7 +482,7 @@ ANIMATIONS
     transform: translateX(110%) rotate(180deg);
   }
   100% {
-    transform: scale(2.9) translateX(145%) rotate(180deg);
+    transform: scale(2.7) translateX(145%) rotate(180deg);
   }
 }
 .header {
