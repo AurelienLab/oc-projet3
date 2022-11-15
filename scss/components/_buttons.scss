@@ -52,7 +52,7 @@
     position: relative;
     cursor: pointer;
     transition: opacity 200ms ease-in-out;
-    &::before {
+    &::before { // Pseudo éléments utilisé par défaut par Font Awesome
       opacity: 1;
       transition: inherit;
     }
