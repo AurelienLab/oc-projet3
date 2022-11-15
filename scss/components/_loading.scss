@@ -21,6 +21,7 @@ $animation-timing: cubic-bezier(.52,-0.01,0,1.53);
     position: relative;
     &__dot {
       position: absolute;
+      //Centrage des points
       left: -(calc($dot-size/2));
       top: -(calc($dot-size/2));
       width: $dot-size;
@@ -43,14 +44,11 @@ $animation-timing: cubic-bezier(.52,-0.01,0,1.53);
         background: map-get($colors-map, secondary, base);
         transform-origin: 160% center;
         animation: loading-left $animation-duration $animation-delay $animation-timing infinite both;
-        //transform-origin: 50% center;
-        //transform:  scale(3) translateX(0%) rotate(0deg);
       }
 
       &--right {
         background: map-get($colors-map, tertiary, base);
         z-index: 1;
-        //display: none;
         transform-origin: -60% center;
         animation: loading-right $animation-duration $animation-delay $animation-timing infinite both;
       }
@@ -125,6 +123,7 @@ ANIMATIONS
   }
 
   100% {
-    transform: scale(2.9) translateX(145%) rotate(180deg);
+    transform: scale(2.7) translateX(145%) rotate(180deg);
   }
 }
+
