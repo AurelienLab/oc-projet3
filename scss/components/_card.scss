@@ -58,6 +58,13 @@
   }
 
   &-meal {
+    //Modification et animation de la zone "selectionné" du bout de card
+    @mixin select-animation {
+      margin-right: 0;
+      i {
+        animation: rotate 700ms 300ms ease-in-out;
+      }
+    }
 
     flex-wrap: nowrap;
 
@@ -72,6 +79,9 @@
     }
 
     &__btn-select {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 19%;
       margin-right: -19%;
       font-size: 1.7rem;
@@ -81,14 +91,36 @@
       transition: margin-right 700ms ease-in-out;
     }
 
-    &:hover {
-      .card-meal__btn-select
-      {
-        margin-right: 0;
-        i {
-          animation: rotate 700ms 300ms ease-in-out;
+    &__label {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    &__input {
+      width: 0;
+      opacity: 0;
+
+      &:checked ~ .card-meal__btn-select {
+        @include select-animation;
+      }
+    }
+
+    //Afficher au survol uniquement sur les appareils avec un curseur
+    //Permet de régler le pb de comportement qui maintient le bouton lorsque uncheck sur
+    //mobile et tablette
+    @media (hover: hover) {
+      &:hover {
+        .card-meal__btn-select
+        {
+          @include select-animation;
         }
       }
     }
   }
 }
+
