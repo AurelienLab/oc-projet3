@@ -94,7 +94,6 @@ html, body {
 body {
   margin-left: auto;
   margin-right: auto;
-  background: #f5f5f6;
   font-family: "Roboto", sans-serif;
 }
 @media screen and (min-width: 768px) {
@@ -580,7 +579,8 @@ ANIMATIONS
   list-style: none;
   counter-reset: li;
   max-width: 400px;
-  margin-left: 12px;
+  margin-left: auto;
+  padding-left: 12px;
   margin-right: auto;
 }
 .instructions__element {
@@ -778,12 +778,20 @@ ANIMATIONS
 }
 .restaurants .flex-container {
   flex-direction: column;
+  margin: auto;
 }
 @media screen and (min-width: 768px) {
   .restaurants .flex-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurants {
+    border-radius: 3rem;
+    margin: 5%;
+    margin-top: 0;
   }
 }
 

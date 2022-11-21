@@ -48,11 +48,18 @@
 
   .flex-container {
     flex-direction: column;
+    margin: auto;
     @include tablet-only{
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-evenly;
     }
+  }
+
+  @include tablet-only {
+    border-radius: 3rem;
+    margin: 5%;
+    margin-top: 0;
   }
 }
 
